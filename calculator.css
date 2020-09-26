@@ -1,0 +1,129 @@
+body {
+  width: 100%;
+  height: 100%;
+  background-image: url("backgroundImage.jpeg");
+  background-size: 100%;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  display: flex;
+  flex-flow: column;
+  width: 60%;
+  color: #B22222;
+  font-weight: bold;
+  font-size: 12pt;
+  font-family: "Comic Sans MS";
+  border: 5px solid #B22222;
+  border-radius: 10px;
+  margin-top: 5%;
+  align-items: center;
+  animation: rotate 1s 1;
+  padding:20px;
+  background-color: rgba( 0, 0, 0, 0.8);
+}
+
+.calc_all {
+  display: flex;
+  flex-flow: row;
+  width: 95%;
+  border: 3px solid black;
+  border-radius: 10px;
+
+  color: black;
+  margin: 10px;
+  padding: 5px;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: "Comic Sans MS";
+  font-size: 18pt;
+}
+
+.calc_keys {
+  display: grid;
+  grid-template-columns: 15% 15% 15% 15% 15% 15%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+  grid-column-gap: 1%;
+  grid-row-gap: 2%;
+  justify-content: center;
+  align-items: center;
+  //background-color: rgba(0, 0, 0, 0.9);
+  padding-top: 3%;
+  padding-bottom: 3%;
+  width: 100%;
+  animation: pulse 5s ;
+  }
+
+.calc_keys > button {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: #B22222;
+  color: white;
+  border: 2px solid white;
+  font-family: "Comic Sans MS";
+  font-size: 1em;
+  padding: 1%;
+}
+
+.calc_keys > button:hover {
+  animation: pulse 10s ;
+  background-color: black;
+  width:100%;
+}
+
+#buttonClear {
+  grid-column: 5 / 7;
+  width: 100%;
+}
+
+
+.divHistory {
+  display: FLEX;
+  flex-flow: row;
+  width: 95%;
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: rgba( 178, 34, 34, 0.9);
+  color: black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: "Comic Sans MS";
+  font-size: 18pt;
+}
+
+
+.divHistory:hover {
+  display: flex;
+  flex-flow: row;
+  width: 95%;
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: rgba( 178, 34, 34, 0.9);
+  color: black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: "Comic Sans MS";
+  font-size: 18pt;
+}
+
+@keyframes pulse {
+  from{
+    opacity: 0.5;
+  } to {
+    opacity: 1;
+  }
+}
+
+@keyframes rotate {
+  0% {transform: rotate(360deg);}
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ES6</title>
+  <!-- <link rel="stylesheet" href="./css/style.css"> -->
+  <style>
+    @import url('calculator.css');
+  </style>
+</head>
+
+<body>
+
+
+  <div class="calculator">
+
+    <input type="text" class="calc_all" value="" disabled />
+    <div class="calc_keys">
+
+        <p><input class="radio" type="radio" name="grad&rad" value="grad">Grad</p>
+        <p><input class="radio" type="radio" name="grad&rad" value="rad">Rad</p>
+
+        <button type="button" id="buttonClear" class="clear" value="clear">Clear</button>
+        <button type="button" value="7">7</button>
+        <button type="button" value="8">8</button>
+        <button type="button" value="9">9</button>
+        <button type="button" class="operator" value="+">+</button>
+        <button type="button" class="operator trig" value="sin">sin</button>
+        <button type="button" class="operator √" value="√">√</button>
+        <button type="button" value="4">4</button>
+        <button type="button" value="5">5</button>
+        <button type="button" value="6">6</button>
+        <button type="button" class="operator" value="-">-</button>
+        <button type="button" class="operator trig" value="cos">cos</button>
+        <button type="button" class="operator trig" value="n!">n!</button>
+        <button type="button" value="1">1</button>
+        <button type="button" value="2">2</button>
+        <button type="button" value="3">3</button>
+        <button type="button" class="operator" value="*">*</button>
+        <button type="button" class="operator trig" value="tg">tg</button>
+        <button type="button" class="operator" value="^">x^y</button>
+        <button type="button" value="0">0</button>
+        <button type="button" value=".">.</button>
+        <button type="button" class="equal-sign operator" value="=">=</button>
+        <button type="button" class="operator" value="/">/</button>
+        <button type="button" class="operator trig" value="ctg">ctg</button>
+        <button type="button" class="operator trig" value="open/close history">hist</button>
+
+    </div>
+
+    <div class="divHistory">
+    операция % выдаст остаток от деления (прямо как в js)
+    для унарных операторов аргумент нужно вводить до нажатия на клавишу операции(sin, cos, tg, ctg)
+    </div>
+
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
